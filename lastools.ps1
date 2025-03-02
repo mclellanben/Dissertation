@@ -9,7 +9,6 @@ C:\LAStools\bin\lasnoise64.exe -i .\tiled_w_buffer\*.las -odir .\cleaned -step 2
 # Ground classification. 10m step, 20cm spike, 40cm offset. 
 C:\LAStools\bin\lasground_new64.exe -i .\cleaned\*.las -odir .\ground -step 10 -spike 0.2 -offset 0.4 -olas
 
-<<<<<<< HEAD
 # LAS normalisation, replacing Z. 
 C:\LAStools\bin\lasheight64.exe -i .\ground\*.las -odir .\normalised -olas -replace_z 
 
