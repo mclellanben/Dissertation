@@ -11,3 +11,6 @@ C:\LAStools\bin\lasground_new64.exe -i .\cleaned\*.las -odir .\ground -step 10 -
 
 # LAS normalisation, replacing Z. 
 C:\LAStools\bin\lasheight64.exe -i .\ground\*.las -odir .\normalised -olas -replace_z 
+
+# CHM creation (10cm resolution)
+C:\LAStools\bin\las2dem64.exe -i .\normalised\*.las -odir .\chm -otif -step 0.1 -use_tile_bb 
