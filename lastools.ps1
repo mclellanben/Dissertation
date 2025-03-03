@@ -1,6 +1,6 @@
 # Change into working directory
 
-# Tiling las files 
+# Tiling laz files and converting to las
 C:\LAStools\bin\lastile64.exe -i .\raw\*.laz -buffer 30 -odir .\tiled_w_buffer -tile_size 500 -olas -flag_as_withheld
 
 # Removing noise. 2mx2m windows, removing points with less than 3 neighbours. 
