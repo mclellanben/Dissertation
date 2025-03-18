@@ -1,7 +1,8 @@
 library(lidR)
 library(terra)
 
-# Creating the DTM
+# Creating the DTM (tin)
+
 dtm_tin <- rasterize_terrain(
   las, 
   res = 0.25, 
@@ -9,3 +10,4 @@ dtm_tin <- rasterize_terrain(
 )
 
 # Normalising the point cloud
+nlas <- las - dtm_tin
